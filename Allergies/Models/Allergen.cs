@@ -10,5 +10,13 @@ namespace Allergies
       AName = aName;
       AScore = aScore;
     }
+    public string GetAllergenName()
+    {
+      return aName;
+    }
+    public bool IncludedAllergens(int aScore)
+    {
+      return (aScore <= intAScore);
+    }
   }
 }
